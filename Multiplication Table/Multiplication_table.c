@@ -1,21 +1,29 @@
 #include <stdio.h>
 #include <conio.h>
+#include <ctype.h>
+#include <stdlib.h>
 
-int n;
+int in,n,m,a,b,c;
+
+int multi(int a,int b,int c)
+{
+   if(b!=0)
+   {
+        printf("%d * %d =%d\n",a,c,(a*c));
+        multi(a,b-1,c+1);
+   }
+   else
+   exit(0);
+}
 
 int main()
 {
     printf("Enter the number whose multiplication is needed: ");
     scanf("%d",&n);
-    printf("%d * 1 = %d\n",n,n*1);
-    printf("%d * 2 = %d\n",n,n*2);
-    printf("%d * 3 = %d\n",n,n*3);
-    printf("%d * 4 = %d\n",n,n*4);
-    printf("%d * 5 = %d\n",n,n*5);
-    printf("%d * 6 = %d\n",n,n*6);
-    printf("%d * 7 = %d\n",n,n*7);
-    printf("%d * 8 = %d\n",n,n*8);
-    printf("%d * 9 = %d\n",n,n*9);
-    printf("%d * 10 = %d\n",n,n*10);
+    printf("Enter the number until where the multiplication is needed: ");
+    scanf("%d",&m);
+    in=1;
+    multi(n,m,in);
     
 }
+
