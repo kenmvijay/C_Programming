@@ -3,13 +3,15 @@
 #include<stdlib.h>
 #include<string.h>
 
+
 int main()
 {
-    int a[100];
     int n;
-    printf("Enter the length of array: ");
+    int a[200];
+    printf("Enter no of ele in array: ");
     scanf("%d",&n);
-    printf("Enter the array: ");
+
+    printf("Enter the ele of array: ");
     for(int i=0;i<n;i++)
     {
         scanf("%d",&a[i]);
@@ -17,13 +19,17 @@ int main()
 
     for(int i=0;i<n;i++)
     {
+        int b=a[i];
         for(int j=i+1;j<n;j++)
         {
-            if(a[i]>a[j])
+            if(a[j]==b)
             {
-                int temp=a[i];
-                a[i]=a[j];
-                a[j]=temp;
+                for(int k=j;k<n;k++)
+                {
+                    a[k]=a[k+1];
+                }
+                n=n-1;
+                j=j-1;
             }
         }
     }
