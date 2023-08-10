@@ -11,19 +11,26 @@ struct emp
 
 int main()
 {
-    struct emp e1;
-    //int n;
-    //printf("Enter no of emp: ");
-    //scanf("%d",&n);
-    //for(int i=0;i<n;i++)
-    //{
-        printf("Enter the name: ");
-        scanf("%s",e1.name);
+    
+    int n;
+    printf("Enter no of emp: ");
+    scanf("%d",&n);
+
+    struct emp e[n];
+
+    for(int i=0;i<n;i++)
+    {
+        printf("\nEnter the name of student %d: ",i+1);
+        scanf("%s",e[i].name);
         printf("Enter the reg no: ");
-        scanf("%d",&e1.reg);
+        scanf("%d",&e[i].reg);
 
-    //}
+    }
 
-    printf("\nEmployee name: %s",e1.name);
-    printf("\nEmployee reg no: %d",e1.reg);
+    for(int i=0;i<n;i++)
+    {
+        printf("\n\nThe name of student %d is: %s",i+1,e[i].name);
+        printf("\nThe reg no is: %d",e[i].reg);
+
+    }
 }
