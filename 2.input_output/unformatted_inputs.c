@@ -34,7 +34,7 @@ int main()
     printf("Enter a char: ");
     gets(c);
     printf("\nChar= %s",c);
-    getch;
+    
 
 
 }
