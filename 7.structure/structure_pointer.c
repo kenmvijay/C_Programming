@@ -10,7 +10,9 @@ struct stu
 
 int main()
 {
+    
     struct stu s1;
+    printf("%d",sizeof(s1));
     struct stu* ptr1;
     char c[100];
     ptr1=&s1;

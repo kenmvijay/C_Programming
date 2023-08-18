@@ -1,0 +1,19 @@
+/*
+
+memory allocated but not used - structure padding
+
+struct example
+{
+    char c;
+    int a;                   //considering 4 byte processor, 12 bytes are allocated for struct     
+    char b;                  //padding bytes are 6
+}
+
+struct example
+{
+    int a;
+    char c;                  //considering 4 byte processor, 8 bytes are allocated for struct 
+    char b;                  //padding bytes are 2
+}
+
+*/
