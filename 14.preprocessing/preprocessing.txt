@@ -1,0 +1,22 @@
+source file -
+initially a c prog file will be saved as (first.c)
+
+preprocessing -
+this file before compilation, when compiled will add the preprocessing data's in the source file.
+after the addition, it will create a intermediate/extended source code. (first.i)
+in this intermediate source code, all the #include header files will be substituted with its functions and 
+the #define variable values will be substituted insted of the variable
+
+compilation -
+then compilation takes place, where it checks for syntax errors.
+if no error present, then assembly level code will be generated.(first.asm)
+
+assembler -
+then assembler converts asm file to object file. (first.obj)
+
+linker -
+linker links all the object files with system libraries then links all object files together. now executable file is generated.(first.exe)
+
+loader -
+Loader will load the exe file to the main memory(RAM)
+runtime error will be shown here.

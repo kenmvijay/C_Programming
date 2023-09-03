@@ -2,7 +2,7 @@ dynamic memory allocation- allocation of memory at runtime
 static memory allocation- allocation of memory at compile time 
 
 dma is alloacated in heap 
-all dma allocated must be free'd
+all dma allocated must be freed
 
 pointers must be used to allocate memory dynamicaally
 
@@ -44,3 +44,7 @@ if newsize = null realloc acts same as free
 \\\\\free(ptr)
 it will deallocate the th mem but does not delete the data in the mem
 
+
+
+////memory leak in c
+if pointer of a dma is not freed , memory leak takes place
