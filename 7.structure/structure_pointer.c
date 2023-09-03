@@ -22,8 +22,8 @@ int main()
     scanf("%d",&ptr1->regno);
     
     //scanf("%s",ptr1->name);
-    printf("\nRegno: %d",ptr1->regno);
-    printf("\nName: %s",ptr1->name);
+    printf("\nRegno: %d",ptr1->regno);           //arrow operator
+    printf("\nName: %s",ptr1->name);               //(*ptr1).name
     
     return 0;
 }

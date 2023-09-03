@@ -14,7 +14,7 @@ void main()
     int a,b,sum;
     printf("Enter two numbers: ");
     scanf("%d%d",&a,&b);
-    display(sumf,a,b);
+    display(sumf,a,b);  // display(&sumf,a,b);
     display(subf,a,b);
 }
 
@@ -30,6 +30,6 @@ int subf(int a,int b)
 
 void display(int (*ptrf_sub_or_sum)(int,int),int a,int b)
 {
-    int result=(*ptrf_sub_or_sum)(a,b);
+    int result=(*ptrf_sub_or_sum)(a,b);    // int result=ptrf_sub_or_sum(a,b);
     printf("%d\n",result);
 }

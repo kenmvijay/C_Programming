@@ -2,10 +2,10 @@
 
 #include<stdio.h>
 
-#pragma Pack(1)
+#pragma pack(1)
 
 struct stu 
-{
+{ 
     char a;
     int b;
     char c;
@@ -15,5 +15,5 @@ struct stu
 
 int main()
 {
-    printf("%d",sizeof(struct stu));
+    printf("%d",sizeof(s1));
 }

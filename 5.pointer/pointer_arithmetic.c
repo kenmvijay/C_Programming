@@ -5,7 +5,7 @@
 
 int main()
 {
-    int a[5]={1,2,3,4,5};
+    int a[5]={1,3,3,4,5};
     int* ptr;
     int* ptr1;
     int d;
@@ -25,11 +25,11 @@ int main()
     printf("\n\n%d",ptr);
     printf("\n%d",*ptr);
 
-    //d=ptr-ptr1;
+    d=ptr-ptr1;
     
 
-    //printf("\n\n%d",d);
-    printf("\n%d %d",*ptr,(*ptr)++);
+    printf("\n\n%d",d);
+    printf("\n%d %d",*ptr,(*ptr)++);    // printf statements executes from right to left
     
 
 

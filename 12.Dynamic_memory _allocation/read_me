@@ -1,0 +1,46 @@
+dynamic memory allocation- allocation of memory at runtime
+static memory allocation- allocation of memory at compile time 
+
+dma is alloacated in heap 
+all dma allocated must be free'd
+
+pointers must be used to allocate memory dynamicaally
+
+dma require stdlib.h
+/////malloc - memory allocation
+ malloc(n*sizeof(datatype));  - it returns the base address of allocated memory from heap in the form of void pointer 
+
+ we need to type cast to the req datatype of pointer
+ for int pointer
+ int *ptr;
+ ptr=(int*)malloc(2*sizeof(int));
+
+ if malloc could not allocate memory, it returns the null pointer
+
+ The indirection operator(*) is a unary operator that can be used to obtain the value stored at the memory location referenced by a pointer variable
+
+
+
+////calloc - contiguous allocation
+
+malloc aloocates a block of memory
+calloc allocates multiple blocks of memory each of same size
+ calloc(no of blocks,size of ezch block)
+
+ value of memory allocated using calloc will have a default value of 0 for each block
+                                 malloc                              garbage
+
+
+use calloc only if u need to have a default value of 0
+
+\\\\\realloc  - it reallocates the size without losing prev info
+if possible, it append the extra memory else it will allocate mem in a new place in heap and copy the old contents then free the old memory
+
+realloc(ptr,newsize);    // new size= n*sizeof(datatype)
+if newsize = null realloc acts same as free
+
+ 
+
+\\\\\free(ptr)
+it will deallocate the th mem but does not delete the data in the mem
+

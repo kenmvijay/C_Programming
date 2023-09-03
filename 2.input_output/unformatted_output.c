@@ -5,37 +5,13 @@
 
 int main()
 {
-    /*
-    char c;
-    printf("Enter a char: ");
-    scanf("%c",&c);
-    printf("Char= %c",c);
     
-    
-   char c;
+    char c[100];
     printf("Enter a char: ");
-    c=getchar();
-    putchar(c);
-    
-    
-   char c;
-    printf("Enter a char: ");
-    scanf("%c",&c);
-    putch(c);
-    */
-
-   char c[5];
-    printf("Enter a char: ");
-    scanf("%s",c);
-    puts(c);
-
-    /*
-    char c[5];
-    printf("Enter a char: ");
+    //scanf("%s",&c);
+    //putchar(c);
+    //putch(c);
     gets(c);
-    printf("\nChar= %s",c);
-    getch;
-    */
-
-
+    puts(c);
+   
 }

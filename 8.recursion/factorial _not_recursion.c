@@ -10,7 +10,7 @@ int main()
     scanf("%d",&n);
     fact(n,1);
 }
-
+ 
 void fact(int n,int mult)
 {
     

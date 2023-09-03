@@ -1,9 +1,11 @@
+////indirect recursion - Indirect recursion in C occurs when a function calls another function and if this function calls the first function again
+
 #include<stdio.h>
 #include<stdlib.h>
 
 int fact(int n);
 int fact2(int n);
-
+ 
 int main()
 {
     int n;

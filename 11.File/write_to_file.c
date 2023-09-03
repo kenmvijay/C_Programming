@@ -7,7 +7,7 @@ int main()
     int num;
     FILE* fptr=NULL;
     char str[100];
-    fptr=fopen("file1.txt","w");      //it can create a file and write to a file
+    fptr=fopen("file1.txt","w");      //it can create a file and write to a file. when opened it deletes all the data in the file
     if(fptr==NULL)                      
     {
         printf("Error.......");
@@ -25,11 +25,11 @@ int main()
     gets(str);                           // Overwritting takes place in write("w") mode
     fputs(str,fptr);
 
-    */
+    
     printf("Enter to add: ");
     scanf("%d %s",&num,str);
     fprintf(fptr,"%d %s",num,str);
-    
+    */
     
 
     fclose(fptr);

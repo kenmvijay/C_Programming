@@ -6,12 +6,15 @@ int sumf(int,int);
 
 int main()
 {
-    int (*ptr_f_sumf)(int,int);
-    ptr_f_sumf=&sumf;                        // or int (*ptr_f_sumf)(int,int)=&sum;     or  int (*ptr_f_sumf)(int,int)=sum;  
+    int (*ptr_f_sumf)(int,int);                     
+    //int (*ptr_f_sumf)(int,int)=&sumf;     
+    //int (*ptr_f_sumf)(int,int)=sumf;  
+    ptr_f_sumf=&sumf;  
     int a,b,sum;
     printf("Enter two numbers: ");
     scanf("%d%d",&a,&b);
-    sum=(*ptr_f_sumf)(a,b);                 // or sum=ptr_f_sumf(a,b);
+    sum=(*ptr_f_sumf)(a,b);                 
+    //sum=ptr_f_sumf(a,b);
     printf("%d",sum);
 }
 
