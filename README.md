@@ -1,6 +1,8 @@
 # C_Programming
 C Language Programs
 
+Scope of a variable in is the visibility of a variable in the code
+
 Operators Precedance and Associativity
 
 Left to Right  () . -> postfix++ postfix--
