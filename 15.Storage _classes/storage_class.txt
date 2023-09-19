@@ -1,0 +1,67 @@
+A Vaiable's
+1. Default value
+2. Location
+3. Scope of a variable
+4. lifetime
+
+All these are mentioned by the storage classes
+They are
+1.Auto
+2.Register
+3.Extern
+4.Static
+
+These are used before the datatypes
+
+Default is Auto storage classes
+
+types of Scope - 
+Block
+Function/Method
+program
+
+
+///////////////////////////
+Auto
+Default Value - garbage
+Scope - function/Block scope is allowed
+Location - stack(RAM)
+Lifetime - within the block
+
+For auto storage class, the instructions are stored in stack, from there moved to RAM memory, there to CPU registers
+Switching of instruction from ram to cpu reg takes time.
+
+//////////////////////
+Register
+Default Value - garbage
+Scope - function/Block scope is allowed
+Location - CPU Register
+Lifetime - within the block
+
+For register, by storing variables in RAM, time is efficient. But all variables cant be stored in cpu reg as its memory is less. only store frequently used variables in register.
+if compiler cant store a variable in cpu reg, then it will be stored in stack(auto).
+we cant use pointer to store address of a register variable, as cpu reg doesnt have a addres.
+
+///////////////////////////
+
+Static
+Default Value - zero
+Scope - function/Block/Program scope is allowed
+Location - RAM
+Lifetime - till the end of the program
+
+once a variable is initialised as static, if once again it is initialised it wont be 0, the variable would have the older value.
+repetitive initializations of the same variable as static will not be executed
+
+///////////////////////////
+
+Extern         - all global variables are Extern
+Default Value - zero
+Scope - Global scope 
+Location - RAM
+Lifetime - till the end of the program
+
+extern is used if a variable is defined in another file, and we want to use that variable in another file in the same project.
+No memory will be allocated in the file where extern is used.
+
+extern is also used in the same file, if variable is declared at the end of the program and we want to use at the beginning of the program.
